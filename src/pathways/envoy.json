@@ -1,0 +1,34 @@
+{
+    "id": "envoy-armor",
+    "name": "Envoy Armor",
+    "order": ["lost-art", "envoy-armor-1", "envoy-armor-2"],
+    "stages": {
+        "lost-art": {
+            "id": "lost-art",
+            "name": "The Lost Art of Armor Crafting",
+            "wiki": "/The_Lost_Art_of_Armor_Crafting",
+            "api": "/v2/items?ids=77349&lang=en",
+            "description": "Acquire a consumable that unlocks the first collection for the Envoy Legenday Armor",
+            "instructions": [
+                "Collect from a boss chest after completing any raid boss OR from Strike Mission: Old Lion's Court(CM)."
+            ],
+            "blocks": ["envoy-armor-1"]
+        },
+        "envoy-armor-1": {
+            "id": "envoy-armor-1",
+            "name": "Collection: Envoy Armor I: Experimental Armor",
+            "wiki": "/Envoy_Armor_I:_Experimental_Armor",
+            "description": "Collect items to complete the first collection, and gain an ascended armor set.",
+            "contains": [],
+            "blocks": ["envoy-armor-2"],
+            "blockedBy": ["lost-art"]
+        },
+        "envoy-armor-2": {
+            "id": "envoy-armor-2",
+            "name": "Envoy Armor II: Refined Armor",
+            "wiki": "/Envoy_Armor_II:_Refined_Armor",
+            "description": "Collect items to complete the second collection, and gain a precursor armor set.",
+            "blockedBy": ["envoy-armor-1"]
+        }
+    }
+}

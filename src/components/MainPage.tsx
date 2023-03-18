@@ -1,6 +1,7 @@
 import { Grid, GridItem } from "@chakra-ui/react";
 import { ComponentType } from "react";
 import { ColorModeSwitcher } from "../ColorModeSwitcher";
+import Guide from "./Guide";
 import Header from "./Header";
 
 const MainPage: ComponentType = () => {
@@ -23,7 +24,9 @@ const MainPage: ComponentType = () => {
             <GridItem area="header">
                 <Header />
             </GridItem>
-            <GridItem area="main">Main</GridItem>
+            <GridItem area="main">
+                <Guide />
+            </GridItem>
             <GridItem area="shoppingList">Shopping List</GridItem>
             <GridItem area="footer">Footer</GridItem>
         </Grid>
