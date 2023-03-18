@@ -1,6 +1,7 @@
 import { ThemeConfig } from "@chakra-ui/theme";
 import { mode, StyleFunctionProps } from "@chakra-ui/theme-tools";
 import { extendTheme } from "@chakra-ui/theme-utils";
+import typography from "./typography";
 
 const config: ThemeConfig = {
     initialColorMode: "system",
@@ -16,6 +17,7 @@ const overrides = {
             },
         }),
     },
+    ...typography,
 };
 
 export default extendTheme(overrides);
