@@ -12,7 +12,7 @@ const MainPage: ComponentType = () => {
     "header header"
     "main shoppingList"
     "footer footer"`}
-            gridTemplateRows={`50px 200px 1fr 50px`}
+            gridTemplateRows={`50px auto 1fr 50px`}
             gridTemplateColumns={`70% 30%`}
             gap={1}
         >

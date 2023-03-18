@@ -1,16 +1,17 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { Divider, Heading, VStack } from "@chakra-ui/react";
 import { ComponentType } from "react";
 
 const Header: ComponentType = () => {
     return (
-        <Box textAlign="center">
+        <VStack textAlign="center">
             <Heading size="lg" textTransform="uppercase">
                 Guild Wars 2
             </Heading>
-            <Heading as="h1" size="4xl">
+            <Heading as="h1" size="4xl" pb={4}>
                 Envoy Armor Guide
             </Heading>
-        </Box>
+            <Divider width="80%" variant="thick" />
+        </VStack>
     );
 };
 
