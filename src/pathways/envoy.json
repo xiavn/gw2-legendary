@@ -10,7 +10,10 @@
             "api": "/v2/items?ids=77349&lang=en",
             "description": "Acquire a consumable that unlocks the first collection for the Envoy Legenday Armor",
             "instructions": [
-                "Collect from a boss chest after completing any raid boss OR from Strike Mission: Old Lion's Court(CM)."
+                {
+                    "description": "Collect from a boss chest after completing any raid boss OR from Strike Mission: Old Lion's Court(CM).",
+                    "determination": "item"
+                }
             ],
             "blocks": ["envoy-armor-1"]
         },
@@ -19,7 +22,7 @@
             "name": "Collection: Envoy Armor I: Experimental Armor",
             "wiki": "/Envoy_Armor_I:_Experimental_Armor",
             "description": "Collect items to complete the first collection, and gain an ascended armor set.",
-            "contains": [],
+            "contains": ["infused-living-crystal"],
             "blocks": ["envoy-armor-2"],
             "blockedBy": ["lost-art"]
         },
@@ -29,6 +32,20 @@
             "wiki": "/Envoy_Armor_II:_Refined_Armor",
             "description": "Collect items to complete the second collection, and gain a precursor armor set.",
             "blockedBy": ["envoy-armor-1"]
+        },
+        "infused-living-crystal": {
+            "id": "infused-living-crystal",
+            "name": "Infused Living Crystal",
+            "wiki": "/Infused_Living_Crystal",
+            "api": "/v2/items?ids=77467&lang=en",
+            "description": "Acquire a Living Crystal from the Earth Elemental in the Tangled Depths and use it to capture energy left over in the pillars after defeating the Vale Guardian in Spirit Vale.",
+            "instructions": [
+                "Go to the Ley-Line Confluence Waypoint — [&BPUHAAA=] in Tangled Depths.",
+                "Head north towards Nuchoch Lane, and follow the ledge on the right until you find an opening.",
+                "Follow the path to an updraft, then take two more updrafts to end up on a platform with some Veteran Earth Elementals. You may have to wait upto 30 minutes for them to spawn.",
+                "Kill the earth Elementals and an opening will appear. Go through it to face another elemental.",
+                "After killing the elemental collect a Living Crystal from the Whitebear's Pride II Strongbox."
+            ]
         }
     }
 }
